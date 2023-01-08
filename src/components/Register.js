@@ -41,7 +41,7 @@ const Register = () => {
         result = await result.json()
         console.log("result", result);
         localStorage.setItem("user-info",JSON.stringify(result))
-        navigate('/about')
+        navigate('/login')
         // history.push('/about')
     }
 
