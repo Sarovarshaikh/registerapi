@@ -6,6 +6,10 @@ const Login = () => {
     const[password,setPassword] = useState('')
     const navigate = useNavigate();
     const loginDadat = async ()=>{
+        if(!password  || !email){
+            alert("Password and Email field  is required")
+            return 
+          }
         // let data = {email,password}
        let data= {
             "login_id":email,

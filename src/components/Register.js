@@ -15,7 +15,10 @@ const Register = () => {
     const signup =async ()=>{
         // let data = {name,email,password,mobile,Country,user}
         // console.log(data)
-        
+        if(!password || !name || !email || !mobile || !Country || !user){
+          alert("All field  is required")
+          return 
+        }
 
         
         
